@@ -17,11 +17,6 @@ public abstract class Note implements Comparable<Note> {
 	}
 
 	@Override
-	public final int hashCode() {
-		return semitone;
-	}
-
-	@Override
 	public final int compareTo(Note other) {
 		return semitone - other.semitone;
 	}
